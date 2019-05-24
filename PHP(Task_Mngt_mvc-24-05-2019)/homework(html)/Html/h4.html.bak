@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+  <style>
+  a:link
+  {
+  color:blue;
+  text-decoration:none;
+  font-size:20px;
+  }
+  a:visited
+  {
+  color:green;
+  }
+  a:hover
+  {
+  color:orange;
+  }
+  a:active
+  {
+  color:red;
+  }
+  </style>
+  </head>
+ 
+  <body>
+  <a href="h5.html" align="center">Go to new Document</a>
+  
+ </body>
+</html>

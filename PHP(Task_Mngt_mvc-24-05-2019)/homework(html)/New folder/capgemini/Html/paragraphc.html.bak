@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>paragraphp</title>
+  <style>
+  p
+  {
+	color:red;
+	font-size:30px;
+	text-align:justify;
+	text-indent:300px;
+	line-height:40px;
+   }
+   </style>
+ </head>
+ <body>
+  <p>Supports keyboard input on column selection.
+ * 'Reload unsaved buffers' option ('Preferences'->'General').
+ * 'Auto Indent on Paste' menu option ('Edit'->'Clipboard').
+ * Base64 Encode/Decode commands ('Edit'->'Convert').
+ * 'Insert spaces instead of tab' option allows different number of spaces.
+ * Allows double click on Fonts dialog box.
+ * Program could crash when loading file in right-to-left language.
+ * 'An additional file name' option for Settings & syntax didn't work.
+ * URL highlighting couldn't handle multiple URLs in single line.
+ * Print command showed tabs in wrong sizes.
+ * Drag and drop cliptext item didn't work correctly.
+ * Fixes screen update issue when changing font.
+ * Join Line now doesn't add extra spaces at the end of line.
+ * Custom icon for User Toolbar didn't show correctly in High DPI screens.
+ * Prevents keyboard column selection being changed by moving mouse pointer.
+ * Cliptext window couldn't load ctl files in Unix format.</p>
+  
+ </body>
+</html>

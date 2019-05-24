@@ -1,0 +1,80 @@
+
+<html lang="en">
+ <head>
+  <title>Document</title>
+  <style>
+  img{
+  float:left;
+  margin:30px;
+  padding:20px
+ 
+  }
+  </style>
+ </head>
+ <body bgcolor="#535353">
+
+  <center><h2>MOBILE</h2></center>
+  
+    <center><h3><font color="red">VIVO</font></h3></center>
+  <div><img src="../images/vivo1.jpg" width="400" height="300" align="middle"><ul>
+   <h4><font color="red">Vivo V11 Pro specification</font></h4>
+   <li><b>Performance:</b>Qualcomm Snapdragon 660</li>
+   <li><b>Display:</b>6.41 inches.</li>
+    <li><b>Storage:</b>64GB.</li>
+	 <li><b>Camera:</b>Dual (16MP +5MP)</li>
+	  <li><b>Battery:</b>3400 mAh</li>
+	   <li><b>Ram:</b>6GB</li>
+	    <li><b>Price:</b>13990/-</li>
+  </li></ul></img></div>
+  
+  <center><h3><font color="red">NOKIA</font></he></center>
+  <div ><img src="../images/samusng galaxy1.jpg" width="300" height="380"><ul>
+  <h4> <font color="red">Nokia 6.1 plus specification</font></h4>
+   <li><b>Performance:</b>Qualcomm SDM636 Snapdragon 636.</li>
+   <li><b>Display:</b>5.8 inches (14.73 cm).</li>
+    <li><b>Storage:</b>64GB.</li>
+	 <li><b>Camera:</b>Dual (16MP + 5MP)</li>
+	  <li><b>Battery:</b>3060 mAh</li>
+	   <li><b>Ram:</b>4GB</li>
+	    <li><b>Price:</b>15999/-</li>
+  </li></ul></img></div>
+
+   <center><h3><font color="red">OPPO</font></h3></center>
+  <div><img src="../images/samusng galaxy2.jpg" width="300" height="380"><ul>
+   <h4><font color="red">Oppo F9 Pro specification</font></h4>
+   <li><b>Performance:</b>MediaTek Helio P60.</li>
+   <li><b>Display:</b>6.3 inches.</li>
+    <li><b>Storage:</b>64GB.</li>
+	 <li><b>Camera:</b>Dual (16MP +2MP)</li>
+	  <li><b>Battery:</b>3500 mAh</li>
+	   <li><b>Ram:</b>6GB</li>
+	    <li><b>Price:</b>19999/-</li>
+  </li></ul></img></div>
+
+   <center><h3><font color="red">REALME</font> </h3></center>
+  <div><img src="../images/vivo1.jpg" width="300" height="380"><ul>
+   <h4><font color="red">Realme 2 Pro specification</font></h4>
+   <li><b>Performance:</b>Qualcomm SDM660 Snapdragon 660</li>
+   <li><b>Display:</b>6.3 inches.</li>
+    <li><b>Storage:</b>64GB.</li>
+	 <li><b>Camera:</b>Dual (16MP +2MP)</li>
+	  <li><b>Battery:</b>3500 mAh</li>
+	   <li><b>Ram:</b>4GB</li>
+	    <li><b>Price:</b>13999/-</li>
+  </li></ul></img></div>
+
+
+
+ <center><h3><font color="red">ASUS</font></h3></center>
+  <div><img src="../images/samusng galaxy3.jpg" width="300" height="380"><ul>
+   <h4><font color="red">Asus Zenfone Max Pro M2 specification</font></h4>
+   <li><b>Performance:</b>Qualcomm SDM660 Snapdragon 660</li>
+   <li><b>Display:</b>6.3 inches.</li>
+    <li><b>Storage:</b>64GB.</li>
+	 <li><b>Camera:</b>Dual (12MP +5MP)</li>
+	  <li><b>Battery:</b>5000 mAh</li>
+	   <li><b>Ram:</b>4GB</li>
+	    <li><b>Price:</b>12999/-</li>
+  </li></ul></img></div>
+ </body>
+</html>

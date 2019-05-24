@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>functions</title>
+ </head>
+ <body>
+ <script>
+
+ var sname="Welcome to Jspiders";
+ document.write("<h1>")
+ document.write("Given string is:"+sname+"<br>");
+ document.write("string length:"+sname.length+"<br>");
+ document.write("charat:"+sname.charAt(6)+"<br>");
+ document.write("indexof:"+sname.indexOf("e")+"<br>");
+ document.write("last indexof:"+sname.lastIndexOf("e")+"<br>");
+ document.write("Uppercase:"+sname.toUpperCase()+"<br>");
+ document.write("Lowercase:"+sname.toLowerCase()+"<br>");
+ document.write("Bold:"+sname.bold()+"<br>");
+ document.write("Italics:"+sname.italics()+"<br>");
+ document.write("Font color:"+sname.fontcolor("red")+"<br>");
+
+ </script>
+
+  
+ </body>
+</html>

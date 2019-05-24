@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  .box{
+  border:10px solid green;
+  width:43px ;
+  margin:20px:
+  padding:15px 25px;
+  border-radius:15px;
+  background-color:coral;
+  color:blue;
+  box-shadow:20px 20px 10px black;
+  transition-duration:2s;
+  }
+  .box:hover{
+  border:20px solid green;
+   margin:40px:
+  padding:30px 35px;
+  border-radius:40px;
+  }
+   .box2{
+  border:20px solid red;
+  width:27px ;
+  margin:40px;
+  padding:20px 30px;
+  border-radius:15px;
+  background-color:coral;
+  color:blue;
+  box-shadow:20px 20px 10px black;
+   transition-duration:2s;
+  }
+  .box2:hover{
+  border:25px solid orange;
+   margin:50px;
+  padding:35px 40px;
+  border-radius:45px;
+  }
+   .box3{
+  border:20px solid red;
+  width:112px ;
+  margin:60px;
+  padding:20px 30px;
+  border-radius:15px;
+  background-color:coral;
+  color:blue;
+   transition-duration:2s;
+  }
+  .box3:hover{
+  border:25px solid orange;
+   margin:70px:
+  padding:35px 40px;
+  border-radius:45px;
+  }
+   .box4{
+  border:20px solid red;
+  width:43px ;
+  margin:20px:
+  padding:15px 25px;
+  border-radius:15px;
+  background-color:coral;
+  color:blue;
+   transition-duration:2s;
+  }
+  .box4:hover{
+  border:25px solid orange;
+   margin:70px:
+  padding:35px 40px;
+  border-radius:45px;
+  }
+
+ 
+</style>
+ </head>
+ <body bgcolor="coral">
+<center><div class="box">Menu</div></center>
+  <div class="box2">Veg</div>
+  <div class="box3">GOVI MANCHURIAN</div>
+   <div class="box3">Masala Tarka</div>
+    <div class="box3">	Paneer</div>
+	<div class="box4">	Non veg</div>
+	<div class="box3">	FRIED CHICKEN</div>
+	<div class="box3">	ROAST MUTTON</div>
+	<div class="box3">	FRIED FISH</div>
+
+ </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ <style>
+  .blue{
+  color:blue;
+  font-size:20px;
+  font-weight:bold;
+  }
+  .red{
+  color:red;
+  text-design:center;
+  }
+  </style>
+ <p class="Blue">Good Morning</p>
+ 
+ <p class="red">We live on the most beautiful planet on earth</p>
+<p> Earth is the planet we live on. It is the third planet from the sun. It is the only planet known to have life on it. Lots of scientists think the earth formed around 4.5 billion years ago.[5] It is one of four rocky planets on the inside of the Solar System. The other three are Mercury, Venus and Mars</p>
+
+<div id ="Blue">The large mass of the sun makes Earth move around it, just as the mass of Earth makes the moon move around it. Earth also turns around in space, so that different parts face the sun at different times. Earth goes around the sun once (one "year") for every 365¼ times it turns around (one "day")</style></div>
+
+<div>Earth is the only planet in our solar system that has a large amount of liquid water.[6] About 74% of the surface of Earth is covered by liquid or frozen water. Because of this, people sometimes call it "blue planet".[7]</div>
+
+<div>Because of its water, Earth is home to millions of species of plants and animals.[8][9] The things that live on Earth have changed its surface greatly. For example, early cyanobacteria changed the air and gave it oxygen. The living part of Earth's surface is called the "biosphere"</div>
+<div>Earth is part of the eight planets and many thousands of small bodies that move around the Sun as its solar system. The Solar System is moving through the Orion Arm of the Milky Way galaxy now, and will be for about the next 10,000 years.[11]
+
+ </body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>font properties</title>
+  <style>
+  p
+  {
+	color:red;
+	font-size:50px;
+	font-family:Eras Bold ITC;
+	font-weight:normal;
+  }
+  </style>
+ </head>
+ <body>
+  <p>Kishore</p>
+ </body>
+</html>

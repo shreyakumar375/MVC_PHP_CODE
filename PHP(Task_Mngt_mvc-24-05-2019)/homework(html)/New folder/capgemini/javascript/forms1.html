@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Forms-1</title>
+  <script>
+  function add()
+  {
+	  var a=parseInt(f1.t1.value);
+	  var b=parseInt(f1.t2.value);
+	  var c=a+b;
+	  document.getElementById("sample").innerHTML="Addition of two numbers is:"+c;
+  }
+  function sub()
+  {
+	  var a=parseInt(f1.t1.value);
+	  var b=parseInt(f1.t2.value);
+	  var c=a-b;
+	  document.getElementById("sample").innerHTML="subtraction of two numbers is:"+c;
+  }
+  function mul()
+  {
+	  var a=parseInt(f1.t1.value);
+	  var b=parseInt(f1.t2.value);
+	  var c=a*b;
+	  document.getElementById("sample").innerHTML="Mul of two numbers is:"+c;
+  }
+  function div()
+  {
+	  var a=parseInt(f1.t1.value);
+	  var b=parseInt(f1.t2.value);
+	  var c=a/b;
+	  document.getElementById("sample").innerHTML="Division of two numbers is:"+c;
+  }
+  </script>
+ </head>
+ <body>
+ <form name="f1">
+	<table align="center">
+	 <tr>
+	    <td>Enter Number:</td>
+	    <td><input type="text" name="t1" placeholder="Enter Number"</td>
+	 </tr>
+	 <tr>
+	    <td>Enter Number:</td>
+	    <td><input type="text" name="t2" placeholder="Enter Number"</td>
+	 </tr>
+	 <tr>
+		<td colspan="2" align="center">
+		<input type="button" name="b1" value="Addition" onclick="add();"/>
+		<input type="button" name="b2" value="Subtraction" onclick="sub();"/>
+		<input type="button" name="b3" value="Multiplication" onclick="mul();"/>
+		<input type="button" name="b4" value="Division" onclick="div();"/></td>
+	</tr>
+	</table>
+	</form>
+	<div id="sample" style="color:red;text-align:center;font-size:20px;"/>
+
+
+
+
+
+  
+ </body>
+</html>

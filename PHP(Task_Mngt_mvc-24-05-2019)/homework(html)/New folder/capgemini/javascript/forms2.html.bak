@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Forms-2</title>
+	<script>
+	document.write("<h1>");
+	function total()
+	{
+		var ch=f1.c1.selectedIndex;
+		if (ch==0)
+		{
+			f1.tfee.value="";
+		}
+		if(ch==1)
+		{
+			f1.tfee.value="12000";
+		}
+		if(ch==2)
+		{
+			f1.tfee.value="10000";
+		}
+		if(ch==3)
+		{
+			f1.tfee.value="7000";
+		}
+		if(ch==4)
+		{
+			f1.tfee.value="6000";
+		}
+
+	}
+
+
+	function conc(i)
+	{
+		if (i==1)
+		{
+			f1.cfee.value="100";
+		}
+		if (i==2)
+		{
+			f1.cfee.value="200";
+		}
+		if (i==3)
+		{
+			f1.cfee.value="300";
+		}
+		if (i==4)
+		{
+			f1.cfee.value="400";
+		}
+	}
+	</script>
+
+ </head>
+ <body>
+ <form name="f1">
+	<table align="center">
+		<tr>
+		<td>Course:</td>
+		<td><select name="c1" onchange="total();">
+			<option>....select.....</option>
+			<option>Java</option>
+			<option>Manual</option>
+			<option>Android</option>
+			<option>Python</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+		<td>TotalFee:</td>
+		<td><input type="text" name="tfee" readonly size=10/></td>
+		</tr>
+		<tr>
+		<td>Caste:</td>
+		<td><input type="radio" name="r1" onclick="conc(1);">OC</input>
+			<input type="radio" name="r1" onclick="conc(2);">BC</input><br>
+			<input type="radio" name="r1" onclick="conc(3);">SC</input>
+			<input type="radio" name="r1" onclick="conc(4);">ST</input></td>
+			</tr>
+		<tr>
+		<td>ConcessionFee:</td>
+		<td><input type="text" name="cfee" readonly size=10/></td>
+		</tr>
+		<tr>
+		<td>PaidFee:</td>
+		<td><input type="text" name="pfee" size=10/></td>
+		</tr>
+		<tr>
+		<td>DueFee:</td>
+		<td><input type="text" name="dfee" readonly size=10/></td>
+		</tr>
+		<tr>
+		<td colspan="2" align="center"><input type="button" name="cal" value="Calculate" onclick="due();"/>
+
+
+</table>
+</form>
+
+
+  
+ </body>
+</html>

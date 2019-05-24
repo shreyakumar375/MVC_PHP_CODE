@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body bgcolor="red">
+  <form method="post" action="xyz.aspx">
+   <table border="0"align="center"cellpadding="15px">
+   <tr><td>Enter Your  First Number: <span style="color:red;">*</span></td>
+  <td><input type="text" name="Enter Your First Number" placeholder= "enter your first number" required /></td></tr>
+ <tr><td>Enter Your  Second Number: <span style="color:red;">*</span></td>
+  <td><input type="text" name="Enter Your Second Number" placeholder= "enter your Second number" required /></td></tr>
+   <tr>
+	  <td><input  type="button" name="Add"></td>
+	  <td><button  type="button" name="Sub">Sub</button></td>
+	   <td><button  type="button" name="Div">Div</button></td>
+	    <td><button  type="button" name="Mul">Sub</button></td></tr>
+		</table>
+		</form>
+ </body>
+</html>

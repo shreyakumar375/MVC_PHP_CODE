@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <table border="1" width="50%" align="center" cellpadding="10px" cellspacing ="5px">
+  <tr bgcolor="yellow" >
+  <th> Batchcode</th>
+  <th> Name</th>
+  <th> sub1</th>
+  <th> sub2</th>
+  </tr>
+   <tr bgcolor="Blue" >
+  <th> Oecm24</th>
+  <th> A</th>
+  <th> JAVA</th>
+  <th> SQL</th>
+  </tr>
+   <tr bgcolor="Blue" >
+  <th> Oecm24</th>
+  <th> B</th>
+  <th> C</th>
+  <th> PYTHON</th>
+  <tr bgcolor="Orange" >
+  <th> Oecm28</th>
+  <th> B</th>
+  <th> C++</th>
+  <th> DATABASE</th>
+ </body>
+</html>

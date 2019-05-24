@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Body tag</title>
+  <style>
+	body
+	{
+		color:red;
+		background-image:url("k.jpg");
+		background-repeat:no-repeat;
+		background-position:200px 300px;
+
+	}
+  </style>
+ </head>
+ <body>
+  Kishore
+ </body>
+</html>

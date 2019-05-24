@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+   <style>
+  .box{
+   border:5px solid Red;
+  width:65px ;
+  margin:10px;
+  padding:10px 20px;
+  border-radius:10px;
+  background-color:Blue;
+  color:black;
+  box-shadow:20px 20px 10px Purple;
+  transition-duration:2s;
+  }
+  .box:hover{
+  border:20px solid orange;
+   margin:20px:
+  padding:15px 20px;
+  border-radius:40px;
+  }
+  </style>
+ <body bgcolor="coral">
+ <form>
+ <table>
+<center><div class="box">Samsung</div></center>
+<h1>Samsung</h1>
+<style>
+img{
+ float:left;
+width: 303px;
+height: 244px;
+  }
+<img src="../images/samusng galaxy1.jpg" align="middle"></img></style>
+<tr><td><ol><li>Modelname:SamsungS5</li>
+		<li>Processor:octacore(Snapdragon)</li>
+		<li>Camera:15px (Front)& 35px(Back camera)</li>
+		<li>Video Quality:19020pto 1020p</li>
+		<li>Screen:5.5inch</li></ol>
+</td></tr>
+
+<div class="box1"> vivo</div>
+<style>img{
+ float:right;
+width: 303px;
+height: 244px;
+  }</style>
+<img src="../images/samusng galaxy2.jpg" align="middle"></img>
+<tr><td><ol><li>Modelname:SamsungS5</li>
+		<li>Processor:octacore(Snapdragon)</li>
+		<li>Camera:15px (Front)& 35px(Back camera)</li>
+		<li>Video Quality:19020pto 1020p</li>
+		<li>Screen:5.5inch</li></ol>
+</td></tr>
+</table>
+</form>
+
+ </body>
+</html>
+ </body>
+</html>

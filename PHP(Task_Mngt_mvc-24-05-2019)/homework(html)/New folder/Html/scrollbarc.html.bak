@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>scroll bar</title>
+  <style>
+  body
+  {
+  scrollbar-arrow-color:red;
+  scrollbar-face-color:yellow;
+  scrollbar-track-color:blue;
+  scrollbar-shadow-color:orange;
+  }
+  </style>
+ </head>
+ <body>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+ <img src="k.jpg" alt="image not found"/>
+  
+ </body>
+</html>

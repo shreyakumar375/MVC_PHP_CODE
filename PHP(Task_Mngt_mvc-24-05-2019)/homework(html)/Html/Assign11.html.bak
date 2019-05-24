@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <h1 >Q.1 Create following types of List</h1>
+    <ul> <li>Languages</li>
+  	<ul type="disc">
+	     <li> High Level Languages</li>
+	<ol> <li> C</li>
+	     <li> C++</li>
+	     <li> Visual Basic</li>
+	     <li> Java</li>
+	      <li>.NET</li>
+	</ol>
+        <li> Machine language</li>
+	    <li>Assembly language</li></ul>
+
+<li>Packages</li>
+<ol>
+  <li>MS office</li>
+  <li>Auto cad</li>
+  <li>Lss</li>
+</ol>
+</ul>
+<h4 >Q.2 Create following types of List</h4>
+<ul>
+<li> Operating system</li>
+  <ol>
+  <li>Dos</li>
+  <li> unix</li>
+  <li> linux</li>
+  <li> WIN NTc</li>
+ </ol>
+ </ul>
+ <h4 >Q.3 Create following types of List</h4>
+ <ul>
+    <li>input device </li>
+     <ol type ="i">
+      <li> keyboard</li>
+      <li>mouse</li>
+      <li>OCRM</li>
+      <li>OMR</li>
+      <li>Scanner</li>
+    </ol>
+	 <li>Output device</li>
+	<li>printer</li>
+	</ul>
+ </body>
+</html>

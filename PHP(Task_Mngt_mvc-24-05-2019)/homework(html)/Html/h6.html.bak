@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <style>
+ .box
+ {
+ border:5px solid red;
+ width:40px;
+ padding:20px 60px 120px 160px;
+ margin:100px 100px 120px 160px;
+ border-radius:20px 60px 120px 100px;
+ background-color:orange;
+ color:white;
+ }
+ </style>
+ </head>
+ <body>
+ <dir class="box">hello </div>
+ </body>
+</html>

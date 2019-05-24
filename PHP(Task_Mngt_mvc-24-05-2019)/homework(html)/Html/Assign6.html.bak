@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body bgcolor="coral">
+  <form method="post" action="xyz.aspx">
+  <h1><center> Signup page</center></h1>
+  <table border="0"align="center"cellpadding="15px">
+  <tr><td>NAME: <span style="color:red;">*</span></td>
+  <td><input type="text" name="username" placeholder= "enter your name" required /></td></tr>
+  <tr><td>PASSWORD: <span style ="color :red;">*</span></td>
+  <td><input type="password" name="pwd" required/></td></tr>>
+  <tr><td>PHONE NO: <td><input type="number" name="phone no"/></td></tr>
+  <tr><td>EmailId: <td><input type="email" name="email"/></td></tr>
+  <tr><td>DOB: <td><input type="date" name="dob" /></td></tr>
+  <tr><td>GENDER:<td><input type="radio" name="gender"value="male">Male</input>
+  <input type="radio"name="gender"value="female">Female</input></tr></td>
+  <tr><td>SUB:<td><input type="checkbox" name="JAVA" value="JAVA">JAVA</input>
+		 <input type="checkbox"name="SQL"value="SQL">SQL</input></td>
+		<td><input type="checkbox"name="J2EE"value="J2EE">J2EE</input></td></tr>
+  <tr><td>CITY:<td><select name="city"</td>
+		 <option name="bangalore" value="bangalore">Bangalore</option>
+		 <option name="Hyderabad" value="Hyderabad">Hyderabad</option>
+		  <option name="Kolkata" value="Kolkata">Kolkata</option>
+		  <option name="Chennai" value="Chennai">Chennai</option></select></td></tr>
+  <tr><td>ADDRESS:<td><textarea name="addr" rows="8" cols="12"></textarea></td></tr>
+  <tr><td>FILE UPLOAD:<td><input type="file" name=""/></td></tr>
+			  <tr><td><input type="Submit" name="Submit"/></td>
+			  <td><button type="Reset" name="Reset" value="reset">Reset</button></td></tr>
+	</table>
+	</form>
+	
+	
+
+		  
+ </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>form Validation</title>
+  <script>
+  function validate()
+  {
+	  var uid=f1.t1.value;
+	  var pw=f1.t2.value;
+	  var cpw=f1.t3.value;
+	  var address=f1.t4.value;
+	  var city=f1.t5.selectedIndex;
+	  var mno=f1.t6.value;
+
+	  if(uid.length==0||uid=="")
+	  {
+		  alert("Please enter username");
+		  return false;
+	  }
+	  else if(pw.length==0||pw=="")
+	  {
+		  alert("please enter password");
+		  return false;
+	  }
+	  else if(cpw.length==0||cpw=="")
+	  {
+		  alert("please enter confirm password");
+		  return false;
+	  }
+	  else if(pw!=cpw)
+	  {
+		  alert("Both  passwords should be same");
+		  return false;
+	  }
+	  else if(address.length==0||adderss=="")
+	  {
+		  alert("please enter address");
+		  return false;
+	  }
+	  else if(city==0)
+	  {
+		  alert("please select city");
+		  return false;
+	  }
+	  else if(mno.length!=10)
+	  {
+		  alert("Invalid mobile number");
+		  return false;
+	  }
+	  else
+	  {
+		  return true;
+	  }
+  }
+
+
+
+
+
+  </script>
+ </head>
+ <body>
+ <form name="f1" onsubmit="return validate();" action="wb.html">
+	<table align="center">
+	 <tr>
+	 <td>Username:</td>
+	 <td><input type="text" name="t1"/></td>
+	 </tr>
+	 <tr>
+	 <td>Password:</td>
+	 <td><input type="password" name="t2"/></td>
+	 </tr>
+	 <tr>
+	 <td>ConfirmPassword:</td>
+	 <td><input type="password" name="t3"/></td>
+	 </tr>
+	 <tr>
+	 <td>Address:</td>
+	 <td><textarea name="t4" rows="5" cols="5"></textarea></td>
+	 </tr>
+	 <tr>
+	 <td>City:</td>
+	 <td><select name="t5">
+		<option>....select....</option>
+		<option>Bangalore</option>
+		<option>Chennai</option>
+		<option>Mysore</option>
+		<option>Hyderabad</option>
+		</select></td>
+		</tr>
+	<tr>
+	<td>MobileNumber:</td>
+	<td><input type="text" name="t6"/>
+	</td></tr>
+	<tr>
+	<td colspan="2" align="center">
+	<input type="submit" name="b1" value="Register"/>
+	<input type="reset" name="b2" value="Reset"/></td></tr>
+</table>
+</form>
+
+
+</body>
+</html>

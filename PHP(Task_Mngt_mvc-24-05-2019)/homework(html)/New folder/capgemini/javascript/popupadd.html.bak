@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+  <script>
+  function show()
+   {
+	   
+	window.open("https://www.google.com","w1",height=350,width=350);
+   }
+	</script>
+ </head>
+ <body>
+ <button onclick="show();">
+ Click Here
+ </button>
+  
+ </body>
+</html>

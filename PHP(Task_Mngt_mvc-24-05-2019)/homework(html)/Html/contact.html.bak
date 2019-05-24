@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+    <link rel="stylesheet" href="../css/Mystyle.css" /></link>
+
+  
+ </head>
+ <body background="15.jpg">
+ <div class="hd">
+ <div class="logocontainer">
+ <a href="index.html"><img src="../images/Logo.png" width="100%" height="100%"  alt="img"></a>
+ </div>
+ <div class="links">
+ <nav>
+ <a href="index.html" class="Menu">Home</a>
+ <a href="products.html" class="Menu">Products</a>
+ <a href="Aboutus.html" class="Menu">About us</a>
+ <a href="Contact.html" class="Menu">Contact Us</a>
+ </nav>
+ </div>
+ </div>
+ <div class="box">
+	  Fill up your information <h3>We</h3> will get back to <h3>You</h3></div>
+	  <div class="box1">
+	  <table>
+	  <form>
+	  <tr>
+	  <td>Name:</td>
+	  <td><input type="text" name="username" placeholder="Enter Your Name"required/></td></tr>
+	  <tr>
+	  <td>Phone no:</td>
+	  <td><input type="number" name="phno"/></td></tr>
+	  <tr>
+	  <td>Email id:</td>
+	  <td><input type="email" name="email"/></td></tr>
+	  <tr>
+	  <td>DOB:</td>
+      <td><input type="date" name="dob"/></td></tr>
+	  <tr>
+	  <td>Comment:</td>
+	  <td><textarea type="comment" rows="6" cols="12"></textarea></td>
+	  </tr>
+	  <tr>
+	  <td><input class ="box5" type="Submit" name="submit"/></td>
+	  <td><button class ="box6" type="reset" name="reset">Reset</button></td></tr>
+	  </form>
+	  </table>
+      </div>
+	  	  <div><u><h1>Our Office</h1></u></div>
+		  <div class="box2">
+<address>My cars,<br>
+         7th cross,<br>
+		 Koramangala,<br>
+		 Bangalore.<br>
+		 </address>
+		 </div>
+		 <div class="box3">
+<address>My cars,<br>
+         9th cross,<br>
+		 Whitefeild,<br>
+		 Bangalore.<br>
+		 </address>
+		 </div>
+		 <div class="box4">
+<address>My cars,<br>
+         19# Alwarpet,<br>
+		 9th cross,<br>
+		 Chennai.<br>
+		 </address>
+		 </div>
+	  </div>
+ 
+ <div class="foo">
+						<h3>Contact Us</h3>
+						<address>My Cars,<br>
+						ground floor,<br>
+						14<sup>th</sup>cross,<br>
+						old airport road,<br>
+						New York-100067<br>
+						</address>
+						<p>Copyright&copy; ISO:9001 &reg;Regd..
+						&trade;</p>
+						<div>
+							<a href ="https://www.facebook.com"><img src="../images/fb.png" alt="img" width="50px" height="50px"/></a>
+							<a href ="https://www.instagram.com"><img src="../images/11.png" alt="img" width="50px" height="50px"/></a>
+							<a href ="https://www.Twitter.com"><img src="../images/13.png" width="50px" height="50px"alt="img"></a>
+						</div>
+				</div>
+ </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>else-if</title>
+ </head>
+ <body>
+ <script>
+	var sname=prompt("Enter student name");
+	var s1=parseInt(prompt("Enter subject-1 marks"));
+	var s2=parseInt(prompt("Enter subject-2 marks"));
+	var s3=parseInt(prompt("Enter subject-3 marks"));
+	var s4=parseInt(prompt("Enter subject-4 marks"));
+	var s5=parseInt(prompt("Enter subject-5 marks"));
+	var s6=parseInt(prompt("Enter subject-6 marks"));
+	var total=s1+s2+s3+s4+s5+s6;
+	var percentage=total/6;
+
+	document.write("<h1 text="red">");
+	document.write("Student Name:"+sname+"<br>");
+	document.write("Subject-1 Marks:"+s1+"<br>");
+	document.write("Subject-2 Marks:"+s2+"<br>");
+	document.write("Subject-3 Marks:"+s3+"<br>");
+	document.write("Subject-4 Marks:"+s4+"<br>");
+	document.write("Subject-5 Marks:"+s5+"<br>");
+	document.write("Subject-6 Marks:"+s6+"<br>");
+	document.write("Total Marks:"+total+"<br>");
+	document.write("percentage:"+percentage+"%"+"<br>");
+
+	if(s1<35||s2<35||s3<35||s4<35||s5<35||s6<35)
+	{
+		document.write("This Student is failed");
+	}
+	else
+	{
+		document.write("This student is passed"+"<br>");
+	if(percentage>=85)
+	{
+		document.write("A+ grade");
+	}
+	else if(percentage<85 && percentage>=65)
+	{
+		document.write("A grade");
+	}
+	else if(percentage<65 && percentage>=50)
+	{
+		document.write("B grade");
+	}
+	else
+	{
+		document.write("C grade");
+	}
+	}
+	</script>
+
+
+
+</body>
+</html>
