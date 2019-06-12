@@ -3,16 +3,18 @@
 
 class user
 {
-	public function getUserDetails($db,$login_id,$user_name,$password,$c_password,$Email)
-	{
+    public function getUserDetails($db,$login_id,$user_name,$password,$c_password,$Email)
+    {
 
-		/*$sql = "SELECT TM_info_user_name,TM_info_user_emailid,TM_info_user_rollid,TM_role_name,if(TM_feature_name is null,'',TM_feature_name) AS featureName FROM TM_map_role roleMap LEFT JOIN TM_user_info AS userInfo ON userInfo.TM_info_user_id =roleMap.TM_info_user_id LEFT JOIN TM_roll_info AS roleInfo ON roleInfo.TM_role_id = roleMap.TM_role_id LEFT JOIN TM_map_feature AS featMap ON featMap.Tm_Role_id = roleMap.TM_role_id LEFT JOIN TM_feature_info AS featInfo ON featInfo.TM_feature_id = featMap.TM_feature_id WHERE TM_info_user_name ='$user_name' AND TM_info_user_pass='$password' AND featInfo.isActive = 1 GROUP BY TM_info_user_name";*/
+        /*$sql = "SELECT TM_info_user_name,TM_info_user_emailid,TM_info_user_rollid,TM_role_name,if(TM_feature_name is null,'',TM_feature_name) AS featureName FROM TM_map_role roleMap LEFT JOIN TM_user_info AS userInfo ON userInfo.TM_info_user_id =roleMap.TM_info_user_id LEFT JOIN TM_roll_info AS roleInfo ON roleInfo.TM_role_id = roleMap.TM_role_id LEFT JOIN TM_map_feature AS featMap ON featMap.Tm_Role_id = roleMap.TM_role_id LEFT JOIN TM_feature_info AS featInfo ON featInfo.TM_feature_id = featMap.TM_feature_id WHERE TM_info_user_name ='$user_name' AND TM_info_user_pass='$password' AND featInfo.isActive = 1 GROUP BY TM_info_user_name";*/
         /*$sql="SELECT TM_info_user_id,TM_info_user_name,TM_info_user_rollid,TM_info_user_emailid,TM_role_name,TM_info_user_pass,TM_role_id,TM_role_name FROM TM_user_info AS userinfo LEFT JOIN TM_role_info AS roleinfo ON userinfo.TM_info_user_rollid=roleinfo.TM_role_id WHERE  TM_info_user_name ='$user_name' AND TM_info_user_pass='$password' AND userinfo.TM_info_user_isActive = 1 GROUP BY TM_info_user_name";*/ 
-        $sql="SELECT 
+        $sql=" SELECT 
             userinfo.TM_info_user_id,
             userinfo.TM_info_user_emailid,
             userinfo.TM_info_user_name,
             roleinfo.TM_role_name,
+            roleinfo.TM_role_tag_name,
+            roleinfo.TM_role_admin_type,
             GROUP_CONCAT(feainfo.TM_feature_id) AS fea_id,
             GROUP_CONCAT(feainfo.TM_feature_name) AS fea_name,
             GROUP_CONCAT(feainfo.TM_feature_tag_name) AS fea_tag_name,
@@ -24,26 +26,33 @@ class user
         LEFT JOIN 
             TM_role_map_feature AS fea_map_info ON roleinfo.TM_role_id=fea_map_info.Tm_Role_id AND fea_map_info.TM_role_map_feature_isActive = 1
         LEFT JOIN 
-            TM_feature_info AS feainfo ON fea_map_info.TM_feature_id=feainfo.TM_feature_id 
+            TM_feature_info AS feainfo ON fea_map_info.TM_feature_id=feainfo.TM_feature_id
+
         WHERE
-            TM_info_user_name ='$user_name' AND 
-            TM_info_user_pass='$password' AND 
+            TM_info_user_name ='$user_name' AND
+            feainfo.TM_feature_menu_flag=1 AND
+            TM_info_user_pass='$password' AND
             userinfo.TM_info_user_isActive = 1 GROUP BY TM_info_user_name";
         $featurearray = array(); 
         $result=$db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+       //print_r($result);exit();
+        //print_r($result[0]['TM_info_user_id']);exit();
         $featurearray['user_id'] = $result[0]['TM_info_user_id'];
+        $featurearray['email_id'] = $result[0]['TM_info_user_emailid'];
         $featurearray['user_name'] = $result[0]['TM_info_user_name'];
         $featurearray['role_name'] = $result[0]['TM_role_name'];
+        $featurearray['role_tag_name'] = $result[0]['TM_role_tag_name'];
+        $featurearray['admin_type'] = $result[0]['TM_role_admin_type'];
         $fea_arr = explode(',', $result[0]['fea_id']);
         $fea_name_arr = explode(',', $result[0]['fea_name']);
         $fea_parent_arr = explode(',', $result[0]['fea_parent_id']);
         for($i=0;$i<count($fea_arr);$i++)
         {
-            $featurearray['feature_list'][$fea_arr[$i]] = $fea_name_arr[$i];
-            $featurearray['parent_list'][$fea_arr[$i]] = $fea_parent_arr[$i];
+            $featurearray['feature_list'][$i] = $fea_name_arr[$i];
+            $featurearray['parent_list'][$i] = $fea_parent_arr[$i];
 
         }
-        print_r($featurearray);exit();
+        //print_r($featurearray);exit();
         //print_r($featurearray);exit();
         return json_encode(array('MVC'=>array('valid'=>1,'user_result'=>$featurearray)));
     }
@@ -67,7 +76,7 @@ class user
        exit;
    }
 }
-	// from here add remove delete functionality code
+    // from here add remove delete functionality code
 public function getDetails($db,$flag)
 {
     $stmt = "SELECT TM_info_user_id AS id,

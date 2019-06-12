@@ -18,7 +18,7 @@
 		$fea_name = $_SESSION['user_feature_info']['fea_name'];
 		$fea_name_arr = explode(',', $fea_name);
 
-		print_r($_SESSION);
+		//print_r($_SESSION);
 		for($i=0; $i < count($fea_arr); $i++)
 		{
 echo'<tr>';
