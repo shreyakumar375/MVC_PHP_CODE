@@ -22,6 +22,8 @@
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:12px 21px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black; margin-top: 32px;margin-left: 120px;}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
+<div class="admin-menu-dashboard" ><p> Admin Menu</p>
+		</div>
 <div>
 <!-- <table class="tg">
  --><?php
@@ -93,4 +95,9 @@
 		 	//alert("11");
 	  	window.location="?rt=user/fViewUserDetails";
 		}); 
+		 $("#feature_2").click(function(){
+		 	//alert("11");
+	  	window.location="?rt=user/fViewRolepage";
+		}); 
+		 
 </script>

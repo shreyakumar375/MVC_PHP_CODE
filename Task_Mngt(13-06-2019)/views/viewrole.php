@@ -1,6 +1,6 @@
 <?php
 @session_start();
-require_once("managerHeader.php"); 
+require_once("Header.php"); 
 ?>
 <!DOCTYPE>
 <html>
@@ -17,7 +17,7 @@ require_once("managerHeader.php");
   <title>RoleDetails</title>
 </head>
 <body>
-  <div class="color"  ><h3> Manage Roles <a href="?rt=index/mngSmpage" class="back-div-userroledetails" ><img src="../Task_Mngt/images/Backicon.png" width="50px" height="50px" title="Back" alt="arrow"></a></h3></div>
+  <div class="colorroles"  ><h3> Manage Roles <a href="?rt=index/samepage" class="back-div-userroledetails" ><img src="../Task_Mngt/images/Backicon.png" width="50px" height="50px" title="Back" alt="arrow"></a></h3></div>
 
   <div class="content-main">
     <button id="createrolemodal" class="rolecrtbtn create-button  btn-success" >Create Role</button>
@@ -188,7 +188,7 @@ require_once("managerHeader.php");
 
     });
   }
-// gettting feature name from feature table
+// gettting feature name from feature table who belongs to perticular user selected
 var editrolemodalp = document.getElementById('editrolemodal');
 $("body").on('click','#roleedit', function(){
  
@@ -216,14 +216,14 @@ $("body").on('click','#roleedit', function(){
           for (var i = 0; i < count; i++) 
           {
             html +='<ul>';
-            html +='<li> <input type="checkbox" name="feature_type" />';
+            html +='<li> <input type="checkbox" checked value='+data.task_mngt.roles_feature_list[i].TM_feature_id+ '>';
             html += data.task_mngt.roles_feature_list[i].TM_feature_name;
             var subc = data.task_mngt.roles_feature_list[i].subfeature.length ;
             var subcLoop = data.task_mngt.roles_feature_list[i].subfeature;
             html +='<ul>';
             for (var j = 0; j < subc; j++) 
             {
-              html +='<li> <input type="checkbox" name="feature_type" />';
+              html +='<li> <input type="checkbox" name="feature_type" checked class="updatechild" value='+subcLoop[j].TM_feature_id +'>';
               html += subcLoop[j].TM_feature_name;
               html +='</li>';      
             }
@@ -293,7 +293,7 @@ $('#closebtn').click(function()
 
  });
 
-   //create role form for inserting new role
+  //create role form for inserting new role
    var createmodal = document.getElementById('createrolemodal');
    $('#createrolemodal').click(function()
    {
@@ -343,7 +343,7 @@ $("#crtrolesubmitbtn").click(function(e){
   console.log();
   var data = $("#createroleform").serializeArray();
 });
-  //getting data on create form of feature
+//getting data on create form of feature
   $("#createrolemodal").on("click",function()
   {
     $('#listingfeatureTBody').html('');
@@ -364,14 +364,15 @@ $("#crtrolesubmitbtn").click(function(e){
           for (var i = 0; i < count; i++) 
           {
             html +='<ul>';
-            html +='<li> <input type="checkbox"/>';
+            html +='<li> <input type="checkbox" value='+data.task_mngt.roles_feature_list[i].TM_feature_id+' feature_name='+ data.task_mngt.roles_feature_list[i].TM_feature_name+'>';
             html += data.task_mngt.roles_feature_list[i].TM_feature_name;
             var subc = data.task_mngt.roles_feature_list[i].subfeature.length ;
             var subcLoop = data.task_mngt.roles_feature_list[i].subfeature;
+            //alert(subcLoop); 
             html +='<ul>';
             for (var j = 0; j < subc; j++) 
             {
-              html +='<li> <input type="checkbox" name="feature_type" />';
+              html +='<li> <input type="checkbox" class="childclass" value='+subcLoop[j].TM_feature_id + '>';
               html += subcLoop[j].TM_feature_name;
               html +='</li>';      
             }
@@ -447,6 +448,7 @@ $("#crtrolesubmitbtn").click(function(e){
           });
 
       // validation of insert field
+
       $('#crtrolesubmitbtn').on('click',function frolefieldVal()
       {
         var val=1;
@@ -467,4 +469,15 @@ $("#crtrolesubmitbtn").click(function(e){
         
         return val;
       }); 
+      
+        $('#crtrolesubmitbtn').on('click',function(e){
+
+        e.preventDefault();
+        var checkedvalue="";
+        $('.childclass').each(function(){
+          checkedvalue +=$(this).attr("value")+',';
+        });
+        checkedvalue = checkedvalue.substr(0, checkedvalue.length-1);
+        console.log(checkedvalue);
+    });
     </script>

@@ -204,6 +204,8 @@ public function getFeatureDetailslist($db)
     }
                 //print_r( $result); exit();
     return json_encode(array('task_mngt'=>array('valid'=>1,'session'=>1,'roles_feature_list'=>$result)));
+
+
 }
 
 public function fRoledelete($db,$id)

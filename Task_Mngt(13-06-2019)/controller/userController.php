@@ -60,7 +60,7 @@
 		//here is the functionaslity offetching details of database
 		public function getDetails() 
 		{
-			if(isset($_POST['ajaxcall']))
+			if(isset($_POST['ajaxcall']) && isset($_SESSION['user_feature_info']['user_id']))
 			{
 				$user_obj = new user();
 				$flag = $_POST['flag'];
@@ -174,7 +174,7 @@
 
 		public function homepage()
 		{
-			if(isset($_SESSION['user_id']))
+			if(isset($_SESSION['user_feature_info']['user_id']))
 			{
 				$this->registry->template->show('usermenu');
 			}
@@ -202,7 +202,7 @@
 
 		public function fViewRolepage()
 		{
-			if(isset($_SESSION['user_id']))
+			if(isset($_SESSION['user_feature_info']['user_id']))
 			{
 				$user_obj = new user();
 				$result = $user_obj->getRoleDetails($this->registry->db);
